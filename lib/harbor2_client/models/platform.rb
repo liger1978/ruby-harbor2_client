@@ -34,8 +34,8 @@ module Harbor2Client
       {
         :'architecture' => :'architecture',
         :'os' => :'os',
-        :'os_version' => :''os.version'',
-        :'os_features' => :''os.features'',
+        :'os_version' => :'os.version',
+        :'os_features' => :'os.features',
         :'variant' => :'variant'
       }
     end
@@ -67,12 +67,12 @@ module Harbor2Client
         self.os = attributes[:'os']
       end
 
-      if attributes.has_key?(:''os.version'')
-        self.os_version = attributes[:''os.version'']
+      if attributes.has_key?(:'os.version')
+        self.os_version = attributes[:'os.version']
       end
 
-      if attributes.has_key?(:''os.features'')
-        if (value = attributes[:''os.features'']).is_a?(Array)
+      if attributes.has_key?(:'os.features')
+        if (value = attributes[:'os.features']).is_a?(Array)
           self.os_features = value
         end
       end
