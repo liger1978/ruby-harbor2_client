@@ -1,7 +1,7 @@
 {
   "gemName": "harbor2_client",
   "moduleName": "Harbor2Client",
-  "gemVersion": "2.3.3.1",
+  "gemVersion": "2.3.3.2",
   "gemLicense": "MIT",
   "gemRequiredRubyVersion": ">= 1.9",
   "gemHomepage": "https://github.com/liger1978/ruby-harbor2_client",
