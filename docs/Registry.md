@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **insecure** | **BOOLEAN** | Whether or not the certificate will be verified when Harbor tries to access the server. | [optional] 
 **description** | **String** | Description of the registry. | [optional] 
 **status** | **String** | Health status of the registry. | [optional] 
-**creation_time** | **String** | The create time of the policy. | [optional] 
-**update_time** | **String** | The update time of the policy. | [optional] 
+**creation_time** | **DateTime** | The create time of the policy. | [optional] 
+**update_time** | **DateTime** | The update time of the policy. | [optional] 
 
 
