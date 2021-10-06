@@ -1,0 +1,12 @@
+{
+  "gemName": "harbor2_client",
+  "moduleName": "Harbor2Client",
+  "gemVersion": "2.3.3.1",
+  "gemLicense": "MIT",
+  "gemRequiredRubyVersion": ">= 1.9",
+  "gemHomepage": "https://github.com/liger1978/ruby-harbor2_client",
+  "gemSummary": "A ruby wrapper for the Harbor swagger APIs",
+  "gemDescription": "A ruby wrapper for the Harbor swagger APIs",
+  "gemAuthor": "Richard Grainger",
+  "gemAuthorEmail": "harbottle@room3d3.com"
+}
