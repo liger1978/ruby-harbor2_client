@@ -11,5 +11,6 @@ Name | Type | Description | Notes
 **start_time** | **DateTime** | The start time of the scan process that generating report | [optional] 
 **end_time** | **DateTime** | The end time of the scan process that generating report | [optional] 
 **complete_percent** | **Integer** | The complete percent of the scanning which value is between 0 and 100 | [optional] 
+**scanner** | [**Scanner**](Scanner.md) |  | [optional] 
 
 
