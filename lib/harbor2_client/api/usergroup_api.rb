@@ -211,6 +211,8 @@ module Harbor2Client
     # @param [Hash] opts the optional parameters
     # @option opts [String] :x_request_id An unique ID for the request
     # @return [Array<(Array<UserGroup>, Fixnum, Hash)>] Array<UserGroup> data, response status code and response headers
+    # @option opts [Integer] :page The page number
+    # @option opts [Integer] :page_size The size of per page
     def list_user_groups_with_http_info(opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug 'Calling API: UsergroupApi.list_user_groups ...'
@@ -219,11 +221,17 @@ module Harbor2Client
         fail ArgumentError, 'invalid value for "opts[:"x_request_id"]" when calling UsergroupApi.list_user_groups, the character length must be great than or equal to 1.'
       end
 
+      if @api_client.config.client_side_validation && !opts[:'page_size'].nil? && opts[:'page_size'] > 100
+        fail ArgumentError, 'invalid value for "opts[:"page_size"]" when calling UserApi.list_users, must be smaller than or equal to 100.'
+      end
+
       # resource path
       local_var_path = '/usergroups'
 
       # query parameters
       query_params = {}
+      query_params[:'page'] = opts[:'page'] if !opts[:'page'].nil?
+      query_params[:'page_size'] = opts[:'page_size'] if !opts[:'page_size'].nil?
 
       # header parameters
       header_params = {}
